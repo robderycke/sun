@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobardSun</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="scss/style.css">
+</head>
+<body class="c-body">
+
+    <header class="c-header py-3 border-bottom bg-white sticky-top">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <a class="navbar-brand fw-bold fs-4 u-text-gradient" href="#">
+                <i class="bi bi-sun-fill me-2"></i>RobardSun
+            </a>
+            <span class="badge bg-light text-dark border js-current-date">Datum laden...</span>
+        </nav>
+    </header>
+
+    <main>
+        <section class="c-hero d-flex align-items-center">
+            <div class="container text-center text-white">
+                <h1 class="c-hero__title display-3 fw-bold mb-3">Zonsopgang in Oostende</h1>
+                <p class="c-hero__lead lead mb-4">Live data voor zondag 29 maart 2026</p>
+                <div class="d-flex justify-content-center gap-3">
+                    <a href="#details" class="btn btn-light btn-lg px-4">Bekijk Details</a>
+            <!--        <button class="btn btn-outline-light btn-lg px-4">Locatie Wijzigen</button> -->
+                </div>
+            </div>
+        </section>
+
+        <section id="details" class="py-5 mt-n5">
+            <div class="container">
+                <div class="row g-4 justify-content-center">
+                    <div class="col-md-4">
+                        <article class="c-card text-center p-5 shadow-sm">
+                            <i class="bi bi-sunrise-fill c-card__icon mb-3"></i>
+                            <h2 class="h5 text-muted">Zonsopgang</h2>
+                            <p class="c-card__time display-4 fw-bold js-sunrise">--:--</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="c-card c-card--highlight text-center p-5 shadow">
+                            <i class="bi bi-sun-fill c-card__icon mb-3"></i>
+                            <h2 class="h5 text-muted">Hoogste Punt</h2>
+                            <p class="c-card__time display-4 fw-bold js-zenith">--:--</p>
+                        </article>
+                    </div>
+                    <div class="col-md-4">
+                        <article class="c-card text-center p-5 shadow-sm">
+                            <i class="bi bi-sunset-fill c-card__icon mb-3"></i>
+                            <h2 class="h5 text-muted">Zonsondergang</h2>
+                            <p class="c-card__time display-4 fw-bold js-sunset">--:--</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 offset-lg-2">
+                        <h3 class="mb-4 text-center">Schemering & Details</h3>
+                        <div class="table-responsive rounded shadow-sm bg-white">
+                            <table class="table table-hover mb-0">
+                                <tbody class="js-detail-table">
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="c-footer py-5 bg-dark text-white mt-5">
+        <div class="container text-center">
+            <p class="mb-2">Data geleverd door Zonsopgang.info & Bol.com</p>
+            <p class="text-muted small">© 2026 RobardSun. All Rights Served.</p>
+        </div>
+    </footer>
+
+    <button class="c-back-to-top js-back-to-top" aria-label="Terug naar boven">
+        <i class="bi bi-chevron-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

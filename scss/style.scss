@@ -1,0 +1,98 @@
+// #region *** SETTINGS ***
+$primary-color: #f39c12;    // Sun Orange
+$secondary-color: #d35400;  // Deep Sunset
+$tertiary-color: #2c3e50;   // Night Blue
+$bg-light: #f8f9fa;
+$white: #ffffff;
+
+$font-main: 'Inter', sans-serif;
+$transition-base: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+// #endregion
+
+// #region *** GENERIC ***
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-main;
+    background-color: $bg-light;
+    color: $tertiary-color;
+    line-height: 1.6;
+}
+// #endregion
+
+// #region *** COMPONENTS ***
+.c-hero {
+    min-height: 70vh;
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), 
+                linear-gradient(135deg, $primary-color, $secondary-color);
+    background-size: cover;
+    background-position: center;
+    margin-bottom: -3rem;
+
+    &__title {
+        letter-spacing: -1px;
+    }
+}
+
+.c-card {
+    background: $white;
+    border-radius: 1.25rem;
+    border: none;
+    transition: $transition-base;
+
+    &:hover {
+        transform: translateY(-8px);
+    }
+
+    &--highlight {
+        background: $tertiary-color;
+        color: $white;
+        
+        .text-muted { color: rgba($white, 0.7) !important; }
+        .c-card__icon { color: $primary-color; }
+    }
+
+    &__icon {
+        font-size: 2.5rem;
+        color: $secondary-color;
+        display: block;
+    }
+}
+
+.c-back-to-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background: $tertiary-color;
+    color: $white;
+    border: none;
+    border-radius: 50%;
+    display: none; // Hidden by default
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1050;
+    transition: $transition-base;
+
+    &:hover {
+        background: $primary-color;
+        transform: scale(1.1);
+    }
+}
+// #endregion
+
+// #region *** UTILITIES ***
+.u-text-gradient {
+    background: linear-gradient(to right, $primary-color, $secondary-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+// #endregion

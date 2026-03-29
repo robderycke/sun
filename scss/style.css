@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #f8f9fa;
+  color: #2c3e50;
+  line-height: 1.6;
+}
+
+.c-hero {
+  min-height: 70vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), linear-gradient(135deg, #f39c12, #d35400);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: -3rem;
+}
+.c-hero__title {
+  letter-spacing: -1px;
+}
+
+.c-card {
+  background: #ffffff;
+  border-radius: 1.25rem;
+  border: none;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.c-card:hover {
+  transform: translateY(-8px);
+}
+.c-card--highlight {
+  background: #2c3e50;
+  color: #ffffff;
+}
+.c-card--highlight .text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.c-card--highlight .c-card__icon {
+  color: #f39c12;
+}
+.c-card__icon {
+  font-size: 2.5rem;
+  color: #d35400;
+  display: block;
+}
+
+.c-back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background: #2c3e50;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  z-index: 1050;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+.c-back-to-top:hover {
+  background: #f39c12;
+  transform: scale(1.1);
+}
+
+.u-text-gradient {
+  background: linear-gradient(to right, #f39c12, #d35400);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}/*# sourceMappingURL=style.css.map */
